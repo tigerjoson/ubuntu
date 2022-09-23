@@ -150,4 +150,4 @@ Note that this can make your system less secure!
 
 sudo tshark -i eth0 -w something.pcap;
 sudo tcpdump -i eth0 -w "data.`date +%Y-%m-%d\ %H.%M`.pcap";
-sudo tshark -i eth0  -f -w test.pcap
+sudo tshark -i eth0  -f 'dst port 513' -w test.pcap
