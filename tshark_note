@@ -146,8 +146,8 @@ Dumpcap can benefit from an enabled BPF JIT compiler if available.
 You might want to enable it by executing:
  "echo 1 > /proc/sys/net/core/bpf_jit_enable"
 Note that this can make your system less secure!
-
-
+#show  configure folders
+tshark -G folders
 sudo tshark -i eth0 -w something.pcap;
 sudo tcpdump -i eth0 -w "data.`date +%Y-%m-%d\ %H.%M`.pcap";
 sudo tshark -i eth0   -w test.pcap -f 'dst port 513'
