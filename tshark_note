@@ -148,6 +148,7 @@ You might want to enable it by executing:
 Note that this can make your system less secure!
 #show  configure folders
 tshark -G folders
+# not use -w to save,using '>' save to file.
 sudo tshark -i eth0 -w something.pcap;
 sudo tcpdump -i eth0 -w "data.`date +%Y-%m-%d\ %H.%M`.pcap";
 sudo tshark -i eth0   -w test.pcap -f 'dst port 513'
