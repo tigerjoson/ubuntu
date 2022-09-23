@@ -151,3 +151,5 @@ tshark -G folders
 sudo tshark -i eth0 -w something.pcap;
 sudo tcpdump -i eth0 -w "data.`date +%Y-%m-%d\ %H.%M`.pcap";
 sudo tshark -i eth0   -w test.pcap -f 'dst port 513'
+#listing profile
+tshark -G folders  | grep conf | awk -F':\t*' '{print $2"/profiles"}' | xargs ls
