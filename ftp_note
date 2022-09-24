@@ -1,0 +1,3 @@
+#service
+sudo service vsftpd status
+systemctl status vsftpd
