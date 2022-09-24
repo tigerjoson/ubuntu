@@ -6,8 +6,8 @@ network:
       dhcp4: false
       #gateway4: 192.168.1.1
       match:
-          macaddress: 08:00:27:44:df:17 #this is bridge network macaddress
-      addresses: [192.168.1.100/24] # this is vm's ip(static)
+          macaddress: ab:cd:ef:11:22:33 #this is bridge network macaddress
+      addresses: [1.1.1.1/24] # this is vm's ip(static)
       nameservers:
          addresses: [8.8.8.8]
       set-name: home
