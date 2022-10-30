@@ -6,11 +6,11 @@ network:
       dhcp4: false
       routes:
         - to: default
-          via: #gtaeway ip
+          via: a.b.c.d #gtaeway ip
       match:
         macaddress: #ras mac
  #this is bridge network macaddress
-      addresses: # this is ras ip(static)
+      addresses: A.B.C.D # this is ras ip(static)
       nameservers:
         addresses: [8.8.8.8]
       set-name: home
