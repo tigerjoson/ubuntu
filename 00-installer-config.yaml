@@ -1,15 +1,18 @@
-# This is the network config written by 'subiquity'
+#22.04
 network:
   ethernets:
-     home:
+    home:
       #dhcp4: true
       dhcp4: false
-      #gateway4: 192.168.1.1
+      routes:
+        - to: default
+          via: 192.168.0.1 #tenda
       match:
-          macaddress: ab:cd:ef:11:22:33 #this is bridge network macaddress
-      addresses: [1.1.1.1/24] # this is vm's ip(static)
+        macaddress: b8:27:eb:ad:f8:72
+ #this is bridge network macaddress
+      addresses: [192.168.0.101/24] # this is vm's ip(static)
       nameservers:
-         addresses: [8.8.8.8]
+        addresses: [8.8.8.8]
       set-name: home
   version: 2
   renderer: networkd
