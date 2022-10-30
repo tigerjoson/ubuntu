@@ -6,11 +6,11 @@ network:
       dhcp4: false
       routes:
         - to: default
-          via: 192.168.0.1 #tenda
+          via: #gtaeway ip
       match:
-        macaddress: b8:27:eb:ad:f8:72
+        macaddress: #ras mac
  #this is bridge network macaddress
-      addresses: [192.168.0.101/24] # this is vm's ip(static)
+      addresses: # this is ras ip(static)
       nameservers:
         addresses: [8.8.8.8]
       set-name: home
