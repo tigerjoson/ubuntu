@@ -16,3 +16,4 @@ network:
       set-name: home
   version: 2
   renderer: networkd
+#my ref https://ubuntu.com/server/docs/network-configuration
