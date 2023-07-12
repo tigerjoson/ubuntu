@@ -10,7 +10,7 @@ network:
       match:
         macaddress: #ras mac
  #this is bridge network macaddress
-      addresses: A.B.C.D # this is ras ip(static)
+      addresses: [A.B.C.D/24] # this is ras ip(static) for 255.255.255.0
       nameservers:
         addresses: [8.8.8.8]
       set-name: home
